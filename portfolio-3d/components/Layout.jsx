@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
       <Head>
         <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
         <link rel="shortcut icon" href="/favicon.svg" type="image/svg+xml" />
-        <title>Rodrigo Balestrim | Portfólio</title>
+        <title>Portfólio Rodrigo Balestrim</title>
         <meta
           name="description"
           content="Portfólio de Rodrigo Balestrim, Desenvolvedor Web Júnior."
