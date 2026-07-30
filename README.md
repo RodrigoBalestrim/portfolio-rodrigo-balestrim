@@ -10,9 +10,9 @@ Portfólio pessoal desenvolvido para apresentar meus projetos, conhecimentos e f
 
 ## Prévia
 
-[![Prévia do projeto Mister Color](portfolio-3d/public/images/projects/mister-color.png)](https://portfolio-3d-eight-nu.vercel.app/projetos)
+[![Prévia do Portfólio Rodrigo Balestrim](portfolio-3d/public/images/projects/portfolio-rodrigo-balestrim.png)](https://portfolio-3d-eight-nu.vercel.app/)
 
-> Clique na imagem para abrir a área de projetos do portfólio.
+> Clique na imagem para abrir o portfólio online.
 
 ## Sobre o projeto
 
