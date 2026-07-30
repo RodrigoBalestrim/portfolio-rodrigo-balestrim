@@ -10,8 +10,8 @@ const Home = () => {
   return (
     <div className="min-h-[100svh] bg-primary/60 pb-24 pt-32 xl:h-full xl:min-h-0 xl:pb-0 xl:pt-0">
       {/* text */}
-      <div className="min-h-[calc(100svh-8rem)] w-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10 xl:h-full xl:min-h-0">
-        <div className="container mx-auto flex min-h-[calc(100svh-8rem)] flex-col justify-center text-center xl:h-full xl:min-h-0 xl:pt-40 xl:text-left">
+      <div className="min-h-[calc(100svh-8rem)] w-full bg-gradient-to-r from-primary/70 via-primary/45 to-transparent xl:h-full xl:min-h-0">
+        <div className="container relative z-10 mx-auto flex min-h-[calc(100svh-8rem)] flex-col justify-center text-left xl:h-full xl:min-h-0 xl:pt-40">
           {/* title */}
           <motion.h1
             variants={fadeIn("down", 0.2)}
@@ -20,8 +20,8 @@ const Home = () => {
             exit="hidden"
             className="h1"
           >
-            Construindo ideias <br /> em{" "}
-            <span className="text-accent">soluções Digitais.</span>
+            Criando experiências <br />
+            <span className="text-accent">digitais</span> com <br /> propósito.
           </motion.h1>
 
           {/* subtitle */}
@@ -30,14 +30,15 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="mx-auto mb-10 max-w-sm rounded-lg bg-primary/75 px-4 py-3 text-white font-normal shadow-[0_8px_24px_rgba(0,0,0,0.35)] backdrop-blur-sm xl:mx-0 xl:mb-16 xl:max-w-xl"
+            className="mb-10 max-w-md text-sm font-light leading-7 text-white/70 sm:text-base xl:mb-16 xl:max-w-xl"
           >
-            Desenvolvedor Web Júnior com foco em HTML, CSS e JavaScript.
-            Transformo ideias em experiências digitais funcionais e bem pensadas.
+            Sou Rodrigo Balestrim, desenvolvedor em início de carreira. Estudo
+            desenvolvimento Full Stack, HTML, CSS e JavaScript e busco criar soluções
+            web funcionais para pessoas e empresas.
           </motion.p>
 
           {/* btn */}
-          <div className="flex justify-center xl:hidden relative">
+          <div className="relative flex xl:hidden">
             <ProjectsBtn />
           </div>
           <motion.div
