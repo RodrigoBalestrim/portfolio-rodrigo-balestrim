@@ -64,11 +64,10 @@ npm install
 npm run dev
 ```
 
-Depois, abra [http://localhost:3000](http://localhost:3000) no navegador.
+Para visualizar a versão publicada, abra [https://portfolio-3d-eight-nu.vercel.app/](https://portfolio-3d-eight-nu.vercel.app/) no navegador.
 
 ## Contato
 
 - WhatsApp: [(44) 99707-5042](https://wa.me/5544997075042)
 - E-mail: wbalestrim1@gmail.com
 - GitHub: [@RodrigoBalestrim](https://github.com/RodrigoBalestrim)
-
