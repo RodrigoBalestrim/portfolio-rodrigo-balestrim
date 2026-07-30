@@ -40,7 +40,7 @@ if (footer) {
   if (!footer.querySelector('.portfolio-return')) {
     const portfolioReturn = document.createElement('a');
     portfolioReturn.className = 'portfolio-return';
-    portfolioReturn.href = '/work';
+    portfolioReturn.href = '/portfoliorodrigobalestrim';
     portfolioReturn.textContent = '← Portfólio';
     footer.appendChild(portfolioReturn);
   }

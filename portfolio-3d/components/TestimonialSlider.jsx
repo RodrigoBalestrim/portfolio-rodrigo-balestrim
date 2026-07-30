@@ -1,5 +1,5 @@
 import { FaQuoteLeft } from "react-icons/fa";
-import { FaCss3Alt, FaGitAlt, FaHtml5, FaJs, FaReact } from "react-icons/fa";
+import { FaCss3Alt, FaGitAlt, FaGithub, FaHtml5, FaJs, FaReact } from "react-icons/fa";
 import {
   SiFramer,
   SiNextdotjs,
@@ -82,6 +82,25 @@ const testimonialData = [
     position: "Hospedagem",
     message: "Publicação do portfólio para acesso online por qualquer pessoa.",
   },
+  {
+    name: "Resumo das tecnologias",
+    position: "Portfólio Rodrigo Balestrim",
+    message: "Todas as tecnologias aplicadas neste portfólio em um único lugar.",
+    icons: [
+      { Icon: FaHtml5, name: "HTML5" },
+      { Icon: FaCss3Alt, name: "CSS3" },
+      { Icon: FaJs, name: "JavaScript" },
+      { Icon: FaReact, name: "React" },
+      { Icon: SiNextdotjs, name: "Next.js" },
+      { Icon: SiTailwindcss, name: "Tailwind CSS" },
+      { Icon: SiFramer, name: "Framer Motion" },
+      { Icon: SiSwiper, name: "Swiper" },
+      { Icon: SiNpm, name: "npm" },
+      { Icon: FaGitAlt, name: "Git" },
+      { Icon: FaGithub, name: "GitHub" },
+      { Icon: SiVercel, name: "Vercel" },
+    ],
+  },
 ];
 
 const TestimonialSlider = () => {
@@ -101,9 +120,17 @@ const TestimonialSlider = () => {
             <div className="w-full max-w-[300px] flex flex-col xl:justify-center items-center relative mx-auto xl:mx-0">
               <div className="flex flex-col justify-center text-center">
                 {/* avatar */}
-                <div className="mb-2 mx-auto">
-                  <person.Icon className="text-6xl text-white" aria-hidden />
-                </div>
+                {person.icons ? (
+                  <div className="mx-auto mb-3 grid grid-cols-4 gap-3 text-3xl text-white">
+                    {person.icons.map(({ Icon, name }) => (
+                      <Icon key={name} title={name} aria-label={name} />
+                    ))}
+                  </div>
+                ) : (
+                  <div className="mb-2 mx-auto">
+                    <person.Icon className="text-6xl text-white" aria-hidden />
+                  </div>
+                )}
 
                 {/* name */}
                 <div className="text-lg">{person.name}</div>
@@ -121,7 +148,7 @@ const TestimonialSlider = () => {
               <div className="mb-4">
                 <FaQuoteLeft
                   className="text-4xl xl:text-6xl text-white/20 mx-auto md:mx-0"
-                  aria-aria-hidden
+                  aria-hidden
                 />
               </div>
 
