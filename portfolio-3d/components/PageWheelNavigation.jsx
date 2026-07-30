@@ -15,8 +15,10 @@ const PageWheelNavigation = () => {
     const changePage = (direction) => {
       if (isChangingPage.current) return;
       const currentIndex = portfolioPages.indexOf(router.pathname);
-      const nextIndex = currentIndex + direction;
-      if (currentIndex === -1 || nextIndex < 0 || nextIndex >= portfolioPages.length) return;
+      if (currentIndex === -1) return;
+
+      const nextIndex =
+        (currentIndex + direction + portfolioPages.length) % portfolioPages.length;
 
       isChangingPage.current = true;
       router.push(portfolioPages[nextIndex]).finally(() => {
