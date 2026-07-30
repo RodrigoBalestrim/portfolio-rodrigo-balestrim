@@ -27,11 +27,11 @@ const ParticlesContainer = () => {
         interactivity: {
           events: {
             onClick: {
-              enable: true,
+              enable: false,
               mode: "push",
             },
             onHover: {
-              enable: false,
+              enable: true,
               mode: "repulse",
             },
             resize: true,
