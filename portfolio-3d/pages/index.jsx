@@ -30,7 +30,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="mx-auto mb-10 max-w-sm rounded-lg bg-primary/75 px-4 py-3 text-white font-normal shadow-[0_8px_24px_rgba(0,0,0,0.35)] backdrop-blur-sm xl:mx-0 xl:mb-16 xl:max-w-xl"
           >
             Desenvolvedor Web Júnior com foco em HTML, CSS e JavaScript.
             Transformo ideias em experiências digitais funcionais e bem pensadas.
