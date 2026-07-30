@@ -26,7 +26,7 @@ const PageWheelNavigation = () => {
       router.push(portfolioPages[nextIndex]).finally(() => {
         window.setTimeout(() => {
           isChangingPage.current = false;
-        }, 430);
+        }, 700);
       });
     };
 
