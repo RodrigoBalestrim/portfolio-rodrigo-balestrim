@@ -11,7 +11,7 @@ const Home = () => {
     <div className="min-h-[100svh] bg-primary/60 pb-24 pt-32 xl:h-full xl:min-h-0 xl:pb-0 xl:pt-0">
       {/* text */}
       <div className="min-h-[calc(100svh-8rem)] w-full bg-gradient-to-r from-primary/10 via-black/30 to-black/10 xl:h-full xl:min-h-0">
-        <div className="container mx-auto flex min-h-[calc(100svh-8rem)] flex-col justify-start text-center xl:h-full xl:min-h-0 xl:justify-center xl:pt-40 xl:text-left">
+        <div className="container mx-auto flex min-h-[calc(100svh-8rem)] flex-col justify-center text-center xl:h-full xl:min-h-0 xl:pt-40 xl:text-left">
           {/* title */}
           <motion.h1
             variants={fadeIn("down", 0.2)}

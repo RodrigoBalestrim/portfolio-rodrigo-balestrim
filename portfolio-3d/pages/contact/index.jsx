@@ -30,7 +30,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="min-h-screen bg-primary/30 px-4 pb-12 pt-36 xl:h-full xl:px-0">
+    <div className="flex min-h-screen w-full items-center bg-primary/30 px-4 py-28 xl:h-full xl:px-0">
       <div className="container mx-auto flex items-center justify-center text-center xl:h-full xl:py-32 xl:text-left">
         {/* text & form */}
         <div className="flex flex-col w-full max-w-[700px]">
