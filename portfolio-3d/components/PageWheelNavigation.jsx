@@ -1,7 +1,7 @@
 import { useRouter } from "next/router";
 import { useEffect, useRef } from "react";
 
-const portfolioPages = ["/", "/about", "/services", "/portfoliorodrigobalestrim", "/testimonials", "/contact"];
+const portfolioPages = ["/", "/about", "/services", "/projetos", "/testimonials", "/contact"];
 
 const PageWheelNavigation = () => {
   const router = useRouter();

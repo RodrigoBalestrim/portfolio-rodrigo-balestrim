@@ -16,7 +16,7 @@ export const navData = [
   { name: "Início", path: "/", Icon: HiHome },
   { name: "Sobre", path: "/about", Icon: HiUser },
   { name: "Serviços", path: "/services", Icon: HiRectangleGroup },
-  { name: "Projetos", path: "/portfoliorodrigobalestrim", Icon: HiViewColumns },
+  { name: "Projetos", path: "/projetos", Icon: HiViewColumns },
   {
     name: "Tecnologias aplicadas",
     path: "/testimonials",
