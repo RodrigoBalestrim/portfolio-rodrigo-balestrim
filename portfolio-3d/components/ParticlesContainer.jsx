@@ -23,11 +23,11 @@ const ParticlesContainer = () => {
             value: "",
           },
         },
-        fpsLimit: 60,
+        fpsLimit: 120,
         interactivity: {
           events: {
             onClick: {
-              enable: false,
+              enable: true,
               mode: "push",
             },
             onHover: {
@@ -53,7 +53,7 @@ const ParticlesContainer = () => {
           links: {
             color: "#f5d393",
             distance: 150,
-            enable: false,
+            enable: true,
             opacity: 0.5,
             width: 1,
           },
@@ -75,7 +75,7 @@ const ParticlesContainer = () => {
               enable: true,
               area: 800,
             },
-            value: 45,
+            value: 80,
           },
           opacity: {
             value: 0.5,
