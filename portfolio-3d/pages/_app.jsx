@@ -45,7 +45,7 @@ function MyApp({ Component, pageProps }) {
           initial="initial"
           animate="animate"
           exit="exit"
-          transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
+          transition={{ duration: 0.36, ease: [0.22, 1, 0.36, 1] }}
           style={{
             transformPerspective: 1600,
             transformStyle: "preserve-3d",

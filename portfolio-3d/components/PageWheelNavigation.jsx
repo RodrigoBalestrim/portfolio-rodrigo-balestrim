@@ -9,6 +9,8 @@ const PageWheelNavigation = () => {
   const touchStartY = useRef(null);
 
   useEffect(() => {
+    portfolioPages.forEach((page) => router.prefetch(page));
+
     const isInteractiveElement = (target) =>
       target?.closest?.("input, textarea, select, button, a, [data-wheel-scroll]");
 
@@ -24,7 +26,7 @@ const PageWheelNavigation = () => {
       router.push(portfolioPages[nextIndex]).finally(() => {
         window.setTimeout(() => {
           isChangingPage.current = false;
-        }, 700);
+        }, 430);
       });
     };
 
