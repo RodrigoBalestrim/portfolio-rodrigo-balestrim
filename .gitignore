@@ -1,0 +1,5 @@
+portfolio-3d/node_modules/
+portfolio-3d/.next/
+portfolio-3d/next-dev.log
+portfolio-3d/next-dev-error.log
+*.log

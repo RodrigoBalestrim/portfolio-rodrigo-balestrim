@@ -1,0 +1,54 @@
+.product-photo {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  transition: transform .4s ease;
+  width: 100%;
+}
+
+.cards article:hover .product-photo {
+  transform: scale(1.04);
+}
+
+.cards article:nth-child(2) .product-photo { object-position: center 40%; }
+.cards article:nth-child(3) .product-photo { object-position: center 55%; }
+
+.product-bottle {
+  bottom: 0;
+  height: 94%;
+  left: 50%;
+  object-fit: contain;
+  position: absolute;
+  transform: translateX(-50%);
+  transition: transform .4s ease;
+  width: 75%;
+}
+
+.cards article:hover .product-bottle { transform: translateX(-50%) scale(1.04); }
+.cards article:nth-child(2) .product-bottle { content: url("oleo-amendoas.png"); }
+
+.portfolio-return {
+  border-bottom: 1px solid currentColor;
+  font: 500 .62rem var(--mono);
+  letter-spacing: .05em;
+  padding: .35rem 0;
+  text-transform: uppercase;
+  transition: color .25s ease, letter-spacing .25s ease, transform .25s ease;
+}
+
+.portfolio-return:hover { color: var(--orange); letter-spacing: .12em; transform: translateX(-4px) translateY(-1px); }
+
+.story-art > img {
+  height: 100%;
+  object-fit: cover;
+  object-position: 60% 18%;
+  position: absolute;
+  width: 100%;
+}
+
+.story-art > span {
+  background: rgba(248, 243, 232, .9);
+  padding: .35rem .5rem;
+  z-index: 1;
+}

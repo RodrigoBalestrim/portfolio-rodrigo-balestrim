@@ -1,0 +1,56 @@
+.header {
+  background: #fff;
+  height: 92px;
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.brand {
+  align-items: baseline;
+  display: flex;
+  gap: .5rem;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.brand b { font-size: 1.3rem; letter-spacing: -.1em; }
+.brand span { font: 500 .58rem var(--mono); letter-spacing: .08em; }
+
+.portfolio-return {
+  border-bottom: 1px solid currentColor;
+  font: 500 .62rem var(--mono);
+  letter-spacing: .05em;
+  padding: .35rem 0;
+  text-transform: uppercase;
+  transition: color .25s ease, letter-spacing .25s ease, transform .25s ease;
+}
+
+.portfolio-return:hover { color: var(--accent); letter-spacing: .12em; transform: translateX(-4px) translateY(-1px); }
+
+.brand img {
+  height: 76px;
+  object-fit: contain;
+  width: 76px;
+}
+
+footer .brand {
+  background: transparent;
+  padding: 0;
+}
+
+.project-photo > img {
+  height: 100%;
+  inset: 0;
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+}
+
+.project-photo::after { z-index: 2; }
+.project-photo-overlay { z-index: 3; }
+
+@media (max-width: 720px) {
+  .header { height: 82px; }
+  .brand img { height: 66px; width: 66px; }
+  .portfolio-return { font-size: .54rem; }
+}

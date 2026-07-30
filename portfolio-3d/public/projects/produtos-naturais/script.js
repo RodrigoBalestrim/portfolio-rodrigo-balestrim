@@ -1,0 +1,10 @@
+const menu = document.querySelector('.menu');
+const nav = document.querySelector('nav');
+const portfolioReturn = document.createElement('a');
+portfolioReturn.className = 'portfolio-return';
+portfolioReturn.href = '/work';
+portfolioReturn.textContent = '← Portfólio';
+document.querySelector('header').insertBefore(portfolioReturn, document.querySelector('.bag'));
+menu.addEventListener('click', () => { menu.classList.toggle('open'); nav.style.display = menu.classList.contains('open') ? 'flex' : ''; menu.textContent = menu.classList.contains('open') ? 'Fechar' : 'Menu'; });
+document.querySelector('#year').textContent = new Date().getFullYear();
+document.querySelector('form').addEventListener('submit', (event) => { event.preventDefault(); event.currentTarget.querySelector('button').textContent = 'Inscrito ✓'; });
