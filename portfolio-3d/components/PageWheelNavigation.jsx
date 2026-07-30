@@ -48,18 +48,32 @@ const PageWheelNavigation = () => {
       const distance = touchStartY.current - touchEndY;
       touchStartY.current = null;
 
-      if (Math.abs(distance) >= 56) {
+      if (Math.abs(distance) >= 40) {
+        changePage(distance > 0 ? 1 : -1);
+      }
+    };
+
+    const handleTouchMove = (event) => {
+      if (touchStartY.current === null || isInteractiveElement(event.target)) return;
+
+      const currentY = event.touches[0]?.clientY;
+      const distance = touchStartY.current - currentY;
+
+      if (Math.abs(distance) >= 40) {
+        touchStartY.current = null;
         changePage(distance > 0 ? 1 : -1);
       }
     };
 
     window.addEventListener("wheel", handleWheel, { passive: false });
     window.addEventListener("touchstart", handleTouchStart, { passive: true });
+    window.addEventListener("touchmove", handleTouchMove, { passive: true });
     window.addEventListener("touchend", handleTouchEnd, { passive: true });
 
     return () => {
       window.removeEventListener("wheel", handleWheel);
       window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchmove", handleTouchMove);
       window.removeEventListener("touchend", handleTouchEnd);
     };
   }, [router]);
