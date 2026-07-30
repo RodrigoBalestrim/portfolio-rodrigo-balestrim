@@ -1,6 +1,13 @@
 import { FaQuoteLeft } from "react-icons/fa";
 import { FaCss3Alt, FaGitAlt, FaHtml5, FaJs, FaReact } from "react-icons/fa";
-import { SiFramer, SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import {
+  SiFramer,
+  SiNextdotjs,
+  SiNpm,
+  SiSwiper,
+  SiTailwindcss,
+  SiVercel,
+} from "react-icons/si";
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -52,10 +59,28 @@ const testimonialData = [
     message: "Transições e movimentos suaves entre as seções.",
   },
   {
+    Icon: SiSwiper,
+    name: "Swiper",
+    position: "Carrosséis",
+    message: "Navegação deslizante usada para exibir projetos e tecnologias.",
+  },
+  {
+    Icon: SiNpm,
+    name: "npm",
+    position: "Dependências",
+    message: "Gerenciamento dos pacotes que dão suporte ao portfólio.",
+  },
+  {
     Icon: FaGitAlt,
     name: "Git e GitHub",
     position: "Versão",
     message: "Organização, controle de versões e publicação dos projetos.",
+  },
+  {
+    Icon: SiVercel,
+    name: "Vercel",
+    position: "Hospedagem",
+    message: "Publicação do portfólio para acesso online por qualquer pessoa.",
   },
 ];
 

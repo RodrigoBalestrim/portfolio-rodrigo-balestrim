@@ -14,7 +14,7 @@ const Testimonials = () => {
           exit="hidden"
           className="h2 mb-8 xl:mb-0"
         >
-          Tecnologias do <span className="text-accent">portfólio.</span>
+          Tecnologias utilizadas no <span className="text-accent">portfólio.</span>
         </motion.h2>
 
         {/* slider */}

@@ -1,6 +1,13 @@
 import { FaCss3Alt, FaGitAlt, FaGithub, FaHtml5, FaJs, FaReact } from "react-icons/fa";
 import { RxArrowTopRight } from "react-icons/rx";
-import { SiFramer, SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import {
+  SiFramer,
+  SiNextdotjs,
+  SiNpm,
+  SiSwiper,
+  SiTailwindcss,
+  SiVercel,
+} from "react-icons/si";
 import { FreeMode, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -16,8 +23,11 @@ const serviceData = [
   { Icon: SiNextdotjs, title: "Next.js", description: "Estrutura para aplicações web rápidas e organizadas." },
   { Icon: SiTailwindcss, title: "Tailwind CSS", description: "Estilização ágil com classes utilitárias." },
   { Icon: SiFramer, title: "Framer Motion", description: "Animações fluidas para melhorar a experiência visual." },
+  { Icon: SiSwiper, title: "Swiper", description: "Carrosséis responsivos para apresentar tecnologias e projetos." },
+  { Icon: SiNpm, title: "npm", description: "Gerenciamento das dependências utilizadas no projeto." },
   { Icon: FaGitAlt, title: "Git", description: "Controle de versões e organização do código." },
   { Icon: FaGithub, title: "GitHub", description: "Publicação e apresentação dos projetos desenvolvidos." },
+  { Icon: SiVercel, title: "Vercel", description: "Hospedagem e publicação online do portfólio." },
 ];
 
 const ServiceSlider = () => {
