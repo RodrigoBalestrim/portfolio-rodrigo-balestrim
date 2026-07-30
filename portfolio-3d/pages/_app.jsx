@@ -40,13 +40,17 @@ function MyApp({ Component, pageProps }) {
       <AnimatePresence mode="wait">
         <motion.div
           key={router.asPath}
-          className="h-full"
+          className="relative h-full overflow-hidden bg-primary"
           variants={pageVariants}
           initial="initial"
           animate="animate"
           exit="exit"
           transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
-          style={{ transformPerspective: 1600, transformStyle: "preserve-3d" }}
+          style={{
+            transformPerspective: 1600,
+            transformStyle: "preserve-3d",
+            backfaceVisibility: "hidden",
+          }}
         >
           <Transition />
           <Component {...pageProps} />
