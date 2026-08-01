@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
         <title>Portfólio Rodrigo Balestrim</title>
         <meta
           name="description"
-          content="Portfólio de Rodrigo Balestrim, Desenvolvedor Web Júnior."
+          content="Portfólio de Rodrigo Balestrim, Desenvolvedor Web."
         />
         <meta
           name="keywords"

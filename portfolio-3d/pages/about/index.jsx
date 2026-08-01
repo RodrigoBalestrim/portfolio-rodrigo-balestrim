@@ -77,7 +77,7 @@ export const aboutData = [
     title: "objetivo",
     info: [
       {
-        title: "Desenvolvedor Web Júnior",
+        title: "Desenvolvedor Web",
         stage: "Primeira oportunidade na área",
       },
       {
@@ -129,9 +129,9 @@ const About = () => {
             animate="show"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            Sou Rodrigo Balestrim, desenvolvedor em início de carreira. Estudo
-            desenvolvimento Full Stack, HTML, CSS e JavaScript e busco criar
-            soluções web funcionais para pessoas e empresas.
+            Sou Rodrigo Balestrim, desenvolvedor Full Stack com conhecimentos em
+            HTML, CSS e JavaScript. Crio soluções web funcionais para pessoas e
+            empresas.
           </motion.p>
 
           {/* counters */}

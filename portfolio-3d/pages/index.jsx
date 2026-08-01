@@ -32,9 +32,9 @@ const Home = () => {
             exit="hidden"
             className="mb-10 max-w-md text-sm font-light leading-7 text-white/70 sm:text-base xl:mb-16 xl:max-w-xl"
           >
-            Sou Rodrigo Balestrim, desenvolvedor em início de carreira. Estudo
-            desenvolvimento Full Stack, HTML, CSS e JavaScript e busco criar soluções
-            web funcionais para pessoas e empresas.
+            Sou Rodrigo Balestrim, desenvolvedor Full Stack com conhecimentos em
+            HTML, CSS e JavaScript. Crio soluções web funcionais para pessoas e
+            empresas.
           </motion.p>
 
           {/* btn */}
