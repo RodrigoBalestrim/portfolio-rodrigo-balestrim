@@ -129,9 +129,9 @@ const About = () => {
             animate="show"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            Sou Rodrigo Balestrim, desenvolvedor Full Stack com conhecimentos em
-            HTML, CSS e JavaScript. Crio soluções web funcionais para pessoas e
-            empresas.
+            Desenvolvedor web com experiência na criação de projetos responsivos
+            e interativos usando React, Next.js e JavaScript. Desenvolvo soluções
+            digitais funcionais, com atenção à experiência do usuário.
           </motion.p>
 
           {/* counters */}
