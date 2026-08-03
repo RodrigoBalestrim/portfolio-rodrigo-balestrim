@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
+import Footer from "../components/Footer";
 import About from "./about";
 import Contact from "./contact";
 import Projects from "./projetos";
@@ -102,6 +103,7 @@ const Home = () => {
     <section id="contato" className="relative isolate min-h-screen overflow-hidden">
       <Contact />
     </section>
+    <Footer />
     </>
   );
 };
