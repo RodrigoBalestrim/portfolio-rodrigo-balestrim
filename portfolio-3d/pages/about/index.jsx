@@ -16,7 +16,6 @@ import {
   SiNextdotjs,
 } from "react-icons/si";
 
-import Avatar from "../../components/Avatar";
 import Circles from "../../components/Circles";
 import { fadeIn } from "../../variants";
 
@@ -99,20 +98,9 @@ const About = () => {
     <div className="flex min-h-screen w-full items-center bg-primary/30 px-4 py-28 text-center xl:h-full xl:px-0 xl:py-32 xl:text-left">
       <Circles />
 
-      {/* avatar img */}
-      <motion.div
-        variants={fadeIn("right", 0.2)}
-        initial="hidden"
-        animate="show"
-        exit="hidden"
-        className="absolute bottom-0 -left-[350px] z-0 hidden w-[630px] xl:flex"
-      >
-        <Avatar />
-      </motion.div>
-
       <div className="container relative z-10 mx-auto flex flex-col items-center gap-x-6 xl:h-full xl:flex-row">
         {/* text */}
-        <div className="flex flex-1 flex-col justify-center xl:pl-28">
+        <div className="flex flex-1 flex-col justify-center">
           <motion.h2
             variants={fadeIn("right", 0.2)}
             initial="hidden"
