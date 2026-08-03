@@ -1,6 +1,6 @@
-import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { RxChevronLeft, RxChevronRight } from "react-icons/rx";
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -73,10 +73,8 @@ const WorkSlider = ({ onProjectChange }) => {
         </SwiperSlide>
       ))}
     </Swiper>
-    <div className="absolute bottom-1 right-4 z-20 flex gap-3 sm:right-5">
-      <button type="button" aria-label="Projeto anterior" className="project-prev grid h-11 w-11 place-items-center rounded-full border border-white/40 bg-primary/80 text-xl text-accent shadow-lg backdrop-blur-sm transition hover:border-accent hover:bg-accent hover:text-white sm:h-12 sm:w-12"><BsArrowLeft /></button>
-      <button type="button" aria-label="Próximo projeto" className="project-next grid h-11 w-11 place-items-center rounded-full border border-white/40 bg-primary/80 text-xl text-accent shadow-lg backdrop-blur-sm transition hover:border-accent hover:bg-accent hover:text-white sm:h-12 sm:w-12"><BsArrowRight /></button>
-    </div>
+    <button type="button" aria-label="Projeto anterior" className="project-prev absolute left-1 top-[42%] z-20 grid -translate-y-1/2 place-items-center text-4xl text-accent/70 drop-shadow-lg transition hover:scale-110 hover:text-accent sm:-left-3 sm:text-5xl"><RxChevronLeft /></button>
+    <button type="button" aria-label="Próximo projeto" className="project-next absolute right-1 top-[42%] z-20 grid -translate-y-1/2 place-items-center text-4xl text-accent/70 drop-shadow-lg transition hover:scale-110 hover:text-accent sm:-right-3 sm:text-5xl"><RxChevronRight /></button>
   </div>
   </>
   );

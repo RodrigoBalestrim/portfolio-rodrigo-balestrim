@@ -1,6 +1,5 @@
 import { FaCss3Alt, FaGitAlt, FaGithub, FaHtml5, FaJs, FaReact } from "react-icons/fa";
-import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
-import { RxArrowTopRight } from "react-icons/rx";
+import { RxArrowTopRight, RxChevronLeft, RxChevronRight } from "react-icons/rx";
 import {
   SiFramer,
   SiNextdotjs,
@@ -65,11 +64,11 @@ const ServiceSlider = () => {
         ))}
       </Swiper>
 
-      <button type="button" aria-label="Conhecimento anterior" className="service-prev absolute bottom-0 left-2 z-20 grid h-10 w-10 place-items-center rounded-full border border-accent/70 bg-primary/80 text-xl text-white transition hover:bg-accent sm:left-4">
-        <BsArrowLeft />
+      <button type="button" aria-label="Conhecimento anterior" className="service-prev absolute left-0 top-[42%] z-20 grid -translate-y-1/2 place-items-center text-4xl text-accent/70 transition hover:scale-110 hover:text-accent sm:-left-3 sm:text-5xl">
+        <RxChevronLeft />
       </button>
-      <button type="button" aria-label="Próximo conhecimento" className="service-next absolute bottom-0 right-2 z-20 grid h-10 w-10 place-items-center rounded-full border border-accent/70 bg-primary/80 text-xl text-white transition hover:bg-accent sm:right-4">
-        <BsArrowRight />
+      <button type="button" aria-label="Próximo conhecimento" className="service-next absolute right-0 top-[42%] z-20 grid -translate-y-1/2 place-items-center text-4xl text-accent/70 transition hover:scale-110 hover:text-accent sm:-right-3 sm:text-5xl">
+        <RxChevronRight />
       </button>
     </div>
   );
