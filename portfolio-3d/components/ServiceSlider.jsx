@@ -1,4 +1,5 @@
 import { FaCss3Alt, FaGitAlt, FaGithub, FaHtml5, FaJs, FaReact } from "react-icons/fa";
+import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
 import { RxArrowTopRight } from "react-icons/rx";
 import {
   SiFramer,
@@ -8,7 +9,7 @@ import {
   SiTailwindcss,
   SiVercel,
 } from "react-icons/si";
-import { FreeMode, Pagination } from "swiper";
+import { FreeMode, Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 import "swiper/css";
@@ -32,35 +33,45 @@ const serviceData = [
 
 const ServiceSlider = () => {
   return (
-    <Swiper
-      breakpoints={{
-        320: { slidesPerView: 1, spaceBetween: 15 },
-        640: { slidesPerView: 3, spaceBetween: 15 },
-      }}
-      pagination={{ clickable: true }}
-      modules={[FreeMode, Pagination]}
-      freeMode
-      className="h-[240px] sm:h-[340px]"
-    >
-      {serviceData.map((item) => (
-        <SwiperSlide key={item.title}>
-          <div className="group flex h-full cursor-pointer gap-x-6 rounded-lg bg-[rgba(65,47,123,0.15)] px-6 py-8 transition-all duration-300 hover:bg-[rgba(89,65,169,0.15)] sm:flex-col sm:gap-x-0">
-            <div className="mb-4 text-4xl text-accent">
-              <item.Icon aria-hidden />
-            </div>
+    <div className="relative">
+      <Swiper
+        breakpoints={{
+          320: { slidesPerView: 1, spaceBetween: 15 },
+          640: { slidesPerView: 3, spaceBetween: 15 },
+        }}
+        navigation={{ prevEl: ".service-prev", nextEl: ".service-next" }}
+        pagination={{ clickable: true }}
+        modules={[FreeMode, Navigation, Pagination]}
+        freeMode
+        className="h-[240px] sm:h-[340px]"
+      >
+        {serviceData.map((item) => (
+          <SwiperSlide key={item.title}>
+            <div className="group flex h-full cursor-pointer gap-x-6 rounded-lg bg-[rgba(65,47,123,0.15)] px-6 py-8 transition-all duration-300 hover:bg-[rgba(89,65,169,0.15)] sm:flex-col sm:gap-x-0">
+              <div className="mb-4 text-4xl text-accent">
+                <item.Icon aria-hidden />
+              </div>
 
-            <div className="mb-8">
-              <div className="mb-2 text-lg">{item.title}</div>
-              <p className="max-w-[350px] leading-normal">{item.description}</p>
-            </div>
+              <div className="mb-8">
+                <div className="mb-2 text-lg">{item.title}</div>
+                <p className="max-w-[350px] leading-normal">{item.description}</p>
+              </div>
 
-            <div className="text-3xl">
-              <RxArrowTopRight className="transition-all duration-300 group-hover:rotate-45 group-hover:text-accent" aria-hidden />
+              <div className="text-3xl">
+                <RxArrowTopRight className="transition-all duration-300 group-hover:rotate-45 group-hover:text-accent" aria-hidden />
+              </div>
             </div>
-          </div>
-        </SwiperSlide>
-      ))}
-    </Swiper>
+          </SwiperSlide>
+        ))}
+      </Swiper>
+
+      <button type="button" aria-label="Conhecimento anterior" className="service-prev absolute bottom-0 left-2 z-20 grid h-10 w-10 place-items-center rounded-full border border-accent/70 bg-primary/80 text-xl text-white transition hover:bg-accent sm:left-4">
+        <BsArrowLeft />
+      </button>
+      <button type="button" aria-label="Próximo conhecimento" className="service-next absolute bottom-0 right-2 z-20 grid h-10 w-10 place-items-center rounded-full border border-accent/70 bg-primary/80 text-xl text-white transition hover:bg-accent sm:right-4">
+        <BsArrowRight />
+      </button>
+    </div>
   );
 };
 
