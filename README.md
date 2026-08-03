@@ -51,7 +51,7 @@ Para apresentar os projetos, foi utilizado o **Swiper**. Os ícones foram implem
 
 ## Projetos apresentados
 
-- **Prazo Certo:** [demonstração web](https://prazo-certo.expo.app) · [código-fonte](https://github.com/RodrigoBalestrim/prazo-certo-app) — aplicativo multiplataforma para controle de validade, alertas, leitura de códigos de barras e relatórios em PDF.
+- **Prazo Certo:** [demonstração web](https://prazo-certo.expo.app) · [código-fonte](https://github.com/RodrigoBalestrim/prazo-certo-app) — aplicativo multiplataforma para controle de validade, alertas, leitura de códigos de barras e relatórios em PDF, com modo teste que sorteia produtos com fotos e datas atualizadas.
 - **Currículo HTML:** currículo bilíngue, responsivo e preparado para exportação profissional em PDF.
 - **Mister Color:** site institucional de uma marca de tintas com catálogo visual e foco em cores e ambientes.
 - **M3 Engenharia:** site institucional com apresentação de serviços e soluções de engenharia.
