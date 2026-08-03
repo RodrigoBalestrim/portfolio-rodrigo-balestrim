@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { BsArrowLeft, BsArrowRight } from "react-icons/bs";
+import { RxChevronLeft, RxChevronRight } from "react-icons/rx";
 import { Navigation, Pagination } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -82,8 +82,8 @@ const WorkSlider = ({ onProjectChange }) => {
       ))}
     </Swiper>
     <div className="absolute bottom-1 right-5 z-20 flex items-center gap-5 sm:right-7">
-      <button type="button" aria-label="Projeto anterior" className="project-prev grid place-items-center text-3xl text-accent transition hover:-translate-x-1 hover:scale-110"><BsArrowLeft /></button>
-      <button type="button" aria-label="Próximo projeto" className="project-next grid place-items-center text-3xl text-accent transition hover:translate-x-1 hover:scale-110"><BsArrowRight /></button>
+      <button type="button" aria-label="Projeto anterior" className="project-prev grid place-items-center text-4xl text-accent transition hover:-translate-x-1 hover:scale-110"><RxChevronLeft /></button>
+      <button type="button" aria-label="Próximo projeto" className="project-next grid place-items-center text-4xl text-accent transition hover:translate-x-1 hover:scale-110"><RxChevronRight /></button>
     </div>
   </div>
   </>
