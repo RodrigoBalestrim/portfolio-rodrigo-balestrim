@@ -3,7 +3,6 @@ import { useState } from "react";
 import { FaCss3Alt, FaHtml5, FaJs } from "react-icons/fa";
 import { SiExpo, SiReact, SiSupabase, SiTypescript } from "react-icons/si";
 
-import Bulb from "../../components/Bulb";
 import WorkSlider, { projects } from "../../components/WorkSlider";
 import { fadeIn } from "../../variants";
 
@@ -63,7 +62,6 @@ const Work = () => {
           </motion.div>
         </div>
       </div>
-      <Bulb />
     </div>
   );
 };

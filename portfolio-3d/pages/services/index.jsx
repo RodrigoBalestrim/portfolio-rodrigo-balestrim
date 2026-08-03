@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 
-import Bulb from "../../components/Bulb";
 import ServiceSlider from "../../components/ServiceSlider";
 import { fadeIn } from "../../variants";
 
@@ -46,7 +45,6 @@ const Services = () => {
           </motion.div>
         </div>
       </div>
-      <Bulb />
     </div>
   );
 };
