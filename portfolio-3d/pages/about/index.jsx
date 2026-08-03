@@ -95,7 +95,7 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="flex w-full bg-primary/30 px-4 py-20 text-center xl:px-0 xl:py-24 xl:text-left">
+    <div className="flex w-full bg-primary/30 px-4 py-12 text-center xl:px-0 xl:py-16 xl:text-left">
       <Circles />
 
       <div className="container relative z-10 mx-auto flex flex-col items-center gap-x-6 xl:flex-row">
@@ -179,7 +179,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit="hidden"
-          className="flex h-auto w-full flex-col xl:h-[480px] xl:max-w-[48%]"
+          className="flex h-auto w-full flex-col xl:max-w-[48%]"
         >
           <div className="mx-auto mb-4 flex flex-wrap justify-center gap-x-4 gap-y-3 xl:mx-0 xl:justify-start xl:gap-x-8">
             {aboutData.map((item, itemI) => (

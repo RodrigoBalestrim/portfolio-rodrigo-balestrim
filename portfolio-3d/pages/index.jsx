@@ -90,7 +90,7 @@ const Home = () => {
     <section id="sobre" className="relative isolate overflow-hidden bg-[#1a1730]">
       <About />
     </section>
-    <section id="servicos" className="relative isolate min-h-screen overflow-hidden">
+    <section id="servicos" className="relative isolate overflow-hidden">
       <Services />
     </section>
     <section id="projetos" className="relative isolate min-h-screen overflow-hidden">
