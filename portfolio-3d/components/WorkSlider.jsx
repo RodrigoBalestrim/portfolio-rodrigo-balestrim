@@ -66,7 +66,15 @@ const WorkSlider = ({ onProjectChange }) => {
         <SwiperSlide key={project.title}>
           <article className="group h-full overflow-visible [perspective:1200px]">
             <div className="relative h-[calc(100%_-_64px)] min-h-[290px] overflow-hidden rounded-xl border border-white/15 bg-black/20 shadow-[0_18px_35px_rgba(0,0,0,0.45)] transition-transform duration-500 [transform-style:preserve-3d] group-hover:[transform:rotateX(2deg)_rotateY(-3deg)_translateY(-8px)]">
-              <iframe src={index === activeIndex ? project.url : undefined} title={`Prévia do site ${project.title}`} className="pointer-events-none absolute left-0 top-0 h-[220%] w-[200%] origin-top-left scale-50 border-0 bg-white" loading="lazy" />
+              <iframe
+                src={index === activeIndex ? project.url : undefined}
+                title={`Prévia do site ${project.title}`}
+                className="pointer-events-none absolute left-0 top-0 origin-top-left border-0 bg-white"
+                style={index === 1
+                  ? { width: "150%", height: "150%", transform: "scale(0.667)" }
+                  : { width: "200%", height: "220%", transform: "scale(0.5)" }}
+                loading="lazy"
+              />
               <a href={project.url} onClick={(event) => openProject(event, project.url)} aria-label={`Abrir o site ${project.title}`} className="absolute inset-0 z-10" />
             </div>
           </article>
