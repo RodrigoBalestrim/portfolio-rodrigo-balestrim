@@ -71,7 +71,7 @@ const WorkSlider = ({ onProjectChange }) => {
                 title={`Prévia do site ${project.title}`}
                 className="pointer-events-none absolute left-0 top-0 origin-top-left border-0 bg-white"
                 style={index === 1
-                  ? { width: "150%", height: "150%", transform: "scale(0.667)" }
+                  ? { width: "140%", height: "180%", transform: "scale(0.715)" }
                   : { width: "200%", height: "220%", transform: "scale(0.5)" }}
                 loading="lazy"
               />
