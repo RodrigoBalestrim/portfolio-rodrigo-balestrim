@@ -16,7 +16,6 @@ import {
   SiNextdotjs,
 } from "react-icons/si";
 
-import Circles from "../../components/Circles";
 import { fadeIn } from "../../variants";
 
 //  data
@@ -96,8 +95,6 @@ const About = () => {
 
   return (
     <div className="flex w-full bg-primary/30 px-4 py-12 text-center xl:px-0 xl:py-16 xl:text-left">
-      <Circles />
-
       <div className="container relative z-10 mx-auto flex flex-col items-center gap-x-6 xl:flex-row">
         {/* text */}
         <div className="flex flex-1 flex-col justify-center">

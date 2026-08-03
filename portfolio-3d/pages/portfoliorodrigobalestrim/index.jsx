@@ -4,7 +4,6 @@ import { FaCss3Alt, FaHtml5, FaJs } from "react-icons/fa";
 import { SiExpo, SiReact, SiSupabase, SiTypescript } from "react-icons/si";
 
 import Bulb from "../../components/Bulb";
-import Circles from "../../components/Circles";
 import WorkSlider, { projects } from "../../components/WorkSlider";
 import { fadeIn } from "../../variants";
 
@@ -22,7 +21,6 @@ const Work = () => {
 
   return (
     <div className="flex min-h-screen w-full items-center bg-primary/30 px-4 py-28 xl:h-full xl:px-0 xl:py-36">
-      <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
           <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
