@@ -57,7 +57,7 @@ const ServiceSlider = () => {
                 <p className="max-w-[350px] leading-normal">{item.description}</p>
               </div>
 
-              <div className="text-3xl">
+              <div className="mt-auto text-3xl">
                 <RxArrowTopRight className="transition-all duration-300 group-hover:rotate-45 group-hover:text-accent" aria-hidden />
               </div>
             </div>
