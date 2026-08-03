@@ -1,6 +1,3 @@
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-
 // icons
 import {
   HiHome,
@@ -13,33 +10,29 @@ import {
 
 // nav data
 export const navData = [
-  { name: "Início", path: "/", Icon: HiHome },
-  { name: "Sobre", path: "/about", Icon: HiUser },
-  { name: "Serviços", path: "/services", Icon: HiRectangleGroup },
-  { name: "Projetos", path: "/projetos", Icon: HiViewColumns },
+  { name: "Início", path: "/#inicio", Icon: HiHome },
+  { name: "Sobre", path: "/#sobre", Icon: HiUser },
+  { name: "Serviços", path: "/#servicos", Icon: HiRectangleGroup },
+  { name: "Projetos", path: "/#projetos", Icon: HiViewColumns },
   {
     name: "Tecnologias aplicadas",
-    path: "/testimonials",
+    path: "/#tecnologias",
     Icon: HiChatBubbleBottomCenterText,
   },
   {
     name: "Contato",
-    path: "/contact",
+    path: "/#contato",
     Icon: HiEnvelope,
   },
 ];
 
 const Nav = () => {
-  const pathname = usePathname();
-
   return (
     <nav className="flex flex-col items-center xl:justify-center gap-y-4 fixed h-max bottom-0 mt-auto xl:right-[2%] z-50 top-0 w-full xl:w-16 xl:max-w-md xl:h-screen">
       <div className="flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10 px-4 md:px-40 xl:px-0 h-[80px] xl:h-max py-8 bg-white/10 backdrop-blur-sm text-3xl xl:text-xl xl:rounded-full">
         {navData.map((link, i) => (
-          <Link
-            className={`${
-              link.path === pathname && "text-accent"
-            } relative flex items-center group hover:text-accent transition-all duration-300`}
+          <a
+            className="relative flex items-center group hover:text-accent transition-all duration-300"
             href={link.path}
             key={i}
           >
@@ -65,7 +58,7 @@ const Nav = () => {
             <div>
               <link.Icon aria-hidden />
             </div>
-          </Link>
+          </a>
         ))}
       </div>
     </nav>

@@ -1,12 +1,10 @@
-import Link from "next/link";
-
 import { HiArrowRight } from "react-icons/hi2";
 
 const ProjectsBtn = () => {
   return (
     <div className="mx-auto xl:mx-0">
-      <Link
-        href="/projetos"
+      <a
+        href="/#projetos"
         className="relative w-[185px] h-[185px] flex justify-center items-center bg-circleStar bg-cover bg-center bg-no-repeat group"
       >
         <svg viewBox="0 0 160 160" className="animate-spin-slow h-full w-full max-h-[148px] max-w-[141px] pointer-events-none select-none" aria-hidden="true">
@@ -17,7 +15,7 @@ const ProjectsBtn = () => {
           className="absolute text-4xl group-hover:translate-x-2 transition-all duration-300"
           aria-hidden
         />
-      </Link>
+      </a>
     </div>
   );
 };

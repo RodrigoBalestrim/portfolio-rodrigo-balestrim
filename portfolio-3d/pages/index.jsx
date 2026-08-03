@@ -3,12 +3,18 @@ import { motion } from "framer-motion";
 import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
+import About from "./about";
+import Contact from "./contact";
+import Projects from "./projetos";
+import Services from "./services";
+import Testimonials from "./testimonials";
 
 import { fadeIn } from "../variants";
 
 const Home = () => {
   return (
-    <div className="min-h-[100svh] bg-primary/60 pb-24 pt-32 xl:h-full xl:min-h-0 xl:pb-0 xl:pt-0">
+    <>
+    <section id="inicio" className="relative min-h-[100svh] overflow-hidden bg-primary/60 pb-24 pt-32 xl:pb-0 xl:pt-0">
       {/* text */}
       <div className="min-h-[calc(100svh-8rem)] w-full bg-gradient-to-r from-primary/70 via-primary/45 to-transparent xl:h-full xl:min-h-0">
         <div className="container relative z-10 mx-auto flex min-h-[calc(100svh-8rem)] flex-col justify-center text-left xl:h-full xl:min-h-0 xl:pt-40">
@@ -76,7 +82,23 @@ const Home = () => {
           <Avatar />
         </motion.div>
       </div>
-    </div>
+    </section>
+    <section id="sobre" className="relative isolate min-h-screen overflow-hidden">
+      <About />
+    </section>
+    <section id="servicos" className="relative isolate min-h-screen overflow-hidden">
+      <Services />
+    </section>
+    <section id="projetos" className="relative isolate min-h-screen overflow-hidden">
+      <Projects />
+    </section>
+    <section id="tecnologias" className="relative isolate min-h-screen overflow-hidden">
+      <Testimonials />
+    </section>
+    <section id="contato" className="relative isolate min-h-screen overflow-hidden">
+      <Contact />
+    </section>
+    </>
   );
 };
 
