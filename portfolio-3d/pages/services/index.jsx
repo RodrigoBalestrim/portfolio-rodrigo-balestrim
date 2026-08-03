@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 
+import Bulb from "../../components/Bulb";
 import ServiceSlider from "../../components/ServiceSlider";
 import { fadeIn } from "../../variants";
 
@@ -8,7 +9,7 @@ export const serviceData = [];
 const Services = () => {
   return (
     <div className="flex w-full bg-primary/30 px-4 py-16 xl:px-0 xl:py-20">
-      <div className="container mx-auto">
+      <div className="container relative z-10 mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
           {/* text */}
           <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
@@ -45,6 +46,7 @@ const Services = () => {
           </motion.div>
         </div>
       </div>
+      <Bulb />
     </div>
   );
 };

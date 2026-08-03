@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FaCss3Alt, FaHtml5, FaJs } from "react-icons/fa";
 import { SiExpo, SiReact, SiSupabase, SiTypescript } from "react-icons/si";
 
+import Bulb from "../../components/Bulb";
 import WorkSlider, { projects } from "../../components/WorkSlider";
 import { fadeIn } from "../../variants";
 
@@ -20,7 +21,7 @@ const Work = () => {
 
   return (
     <div className="flex w-full bg-primary/30 px-4 py-16 xl:px-0 xl:py-20">
-      <div className="container mx-auto">
+      <div className="container relative z-10 mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
           <div className="text-center flex xl:w-[30vw] flex-col lg:text-left mb-4 xl:mb-0">
             <motion.h2
@@ -62,6 +63,7 @@ const Work = () => {
           </motion.div>
         </div>
       </div>
+      <Bulb />
     </div>
   );
 };
