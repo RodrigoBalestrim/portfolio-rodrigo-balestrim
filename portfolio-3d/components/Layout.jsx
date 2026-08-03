@@ -2,7 +2,6 @@ import Head from "next/head";
 
 import Header from "../components/Header";
 import Nav from "../components/Nav";
-import PageWheelNavigation from "../components/PageWheelNavigation";
 import TopLeftImg from "../components/TopLeftImg";
 
 const Layout = ({ children }) => {
@@ -30,7 +29,6 @@ const Layout = ({ children }) => {
       <TopLeftImg />
       <Nav />
       <Header />
-      <PageWheelNavigation />
 
       {/* main content */}
       {children}

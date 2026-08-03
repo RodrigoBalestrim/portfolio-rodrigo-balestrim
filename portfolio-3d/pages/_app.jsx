@@ -40,7 +40,7 @@ function MyApp({ Component, pageProps }) {
       <AnimatePresence mode="wait">
         <motion.div
           key={router.asPath}
-          className="relative h-full overflow-hidden bg-primary"
+          className="relative min-h-screen overflow-x-hidden bg-primary"
           variants={pageVariants}
           initial="initial"
           animate="animate"
