@@ -83,11 +83,11 @@ const Home = () => {
         </motion.div>
       </div>
       <div
-        className="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-28 bg-gradient-to-t from-[#1a1730] via-[#1a1730]/95 to-transparent"
+        className="pointer-events-none absolute inset-x-0 bottom-0 z-20 h-16 bg-gradient-to-t from-[#1a1730] via-[#1a1730]/90 to-transparent"
         aria-hidden="true"
       />
     </section>
-    <section id="sobre" className="relative isolate min-h-screen overflow-hidden bg-[#1a1730]">
+    <section id="sobre" className="relative isolate overflow-hidden bg-[#1a1730]">
       <About />
     </section>
     <section id="servicos" className="relative isolate min-h-screen overflow-hidden">

@@ -95,10 +95,10 @@ const About = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className="flex min-h-screen w-full items-center bg-primary/30 px-4 py-28 text-center xl:h-full xl:px-0 xl:py-32 xl:text-left">
+    <div className="flex w-full bg-primary/30 px-4 py-20 text-center xl:px-0 xl:py-24 xl:text-left">
       <Circles />
 
-      <div className="container relative z-10 mx-auto flex flex-col items-center gap-x-6 xl:h-full xl:flex-row">
+      <div className="container relative z-10 mx-auto flex flex-col items-center gap-x-6 xl:flex-row">
         {/* text */}
         <div className="flex flex-1 flex-col justify-center">
           <motion.h2
