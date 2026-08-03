@@ -73,8 +73,10 @@ const WorkSlider = ({ onProjectChange }) => {
         </SwiperSlide>
       ))}
     </Swiper>
-    <button type="button" aria-label="Projeto anterior" className="project-prev absolute left-1 top-[42%] z-20 grid -translate-y-1/2 place-items-center text-4xl text-accent/70 drop-shadow-lg transition hover:scale-110 hover:text-accent sm:-left-3 sm:text-5xl"><RxChevronLeft /></button>
-    <button type="button" aria-label="Próximo projeto" className="project-next absolute right-1 top-[42%] z-20 grid -translate-y-1/2 place-items-center text-4xl text-accent/70 drop-shadow-lg transition hover:scale-110 hover:text-accent sm:-right-3 sm:text-5xl"><RxChevronRight /></button>
+    <div className="absolute bottom-1 right-4 z-20 flex items-center gap-2 sm:right-5">
+      <button type="button" aria-label="Projeto anterior" className="project-prev grid place-items-center text-4xl text-accent/70 drop-shadow-lg transition hover:scale-110 hover:text-accent"><RxChevronLeft /></button>
+      <button type="button" aria-label="Próximo projeto" className="project-next grid place-items-center text-4xl text-accent/70 drop-shadow-lg transition hover:scale-110 hover:text-accent"><RxChevronRight /></button>
+    </div>
   </div>
   </>
   );
