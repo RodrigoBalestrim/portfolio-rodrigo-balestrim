@@ -5,6 +5,8 @@ const portfolioSocialLinks = [
   { label: "GitHub", icon: "ri-github-line", href: "https://github.com/RodrigoBalestrim" },
 ];
 
+const portfolioUrl = 'https://portfolio-3d-eight-nu.vercel.app/#projetos';
+
 if (!document.querySelector('link[data-portfolio-icons]')) {
   const iconStyles = document.createElement('link');
   iconStyles.rel = 'stylesheet';
@@ -30,8 +32,14 @@ if (header && !header.querySelector('.project-socials')) {
   header.insertBefore(headerSocials, returnButton || header.lastElementChild);
 }
 
+document.querySelectorAll('.portfolio-return, .back').forEach((returnButton) => {
+  returnButton.href = portfolioUrl;
+  returnButton.setAttribute('aria-label', 'Voltar aos projetos do portfólio');
+});
+
 const footer = document.querySelector('footer');
 if (footer) {
+  footer.querySelectorAll('a[href="/projetos"]').forEach((legacyReturn) => legacyReturn.remove());
   const existingLinks = footer.querySelector('.contact-links');
   const footerSocials = createSocialLinks('contact-links is-icons');
   if (existingLinks) existingLinks.replaceWith(footerSocials);
@@ -40,7 +48,7 @@ if (footer) {
   if (!footer.querySelector('.portfolio-return')) {
     const portfolioReturn = document.createElement('a');
     portfolioReturn.className = 'portfolio-return';
-    portfolioReturn.href = '/projetos';
+    portfolioReturn.href = portfolioUrl;
     portfolioReturn.textContent = '← Portfólio';
     footer.appendChild(portfolioReturn);
   }
