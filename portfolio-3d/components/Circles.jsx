@@ -8,7 +8,7 @@ const Circles = () => {
         alt="circles"
         width={260}
         height={200}
-        className="w-full h-full"
+        className="h-full w-full [mask-image:linear-gradient(to_bottom,black_55%,transparent_100%)] [-webkit-mask-image:linear-gradient(to_bottom,black_55%,transparent_100%)]"
       />
     </div>
   );
