@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 
 import Bulb from "../../components/Bulb";
-import Circles from "../../components/Circles";
 import ServiceSlider from "../../components/ServiceSlider";
 import { fadeIn } from "../../variants";
 
@@ -10,7 +9,6 @@ export const serviceData = [];
 const Services = () => {
   return (
     <div className="flex w-full bg-primary/30 px-4 py-16 xl:px-0 xl:py-20">
-      <Circles />
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-x-8">
           {/* text */}
