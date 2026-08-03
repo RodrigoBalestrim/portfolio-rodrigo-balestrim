@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { FaCss3Alt, FaHtml5, FaJs } from "react-icons/fa";
+import { SiExpo, SiReact, SiSupabase, SiTypescript } from "react-icons/si";
 
 import Bulb from "../../components/Bulb";
 import Circles from "../../components/Circles";
@@ -9,7 +10,15 @@ import { fadeIn } from "../../variants";
 
 const Work = () => {
   const [projectIndex, setProjectIndex] = useState(0);
-  const toolIcons = { HTML: FaHtml5, CSS: FaCss3Alt, JavaScript: FaJs };
+  const toolIcons = {
+    HTML: FaHtml5,
+    CSS: FaCss3Alt,
+    JavaScript: FaJs,
+    React: SiReact,
+    Expo: SiExpo,
+    TypeScript: SiTypescript,
+    Supabase: SiSupabase,
+  };
 
   return (
     <div className="flex min-h-screen w-full items-center bg-primary/30 px-4 py-28 xl:h-full xl:px-0 xl:py-36">
@@ -33,7 +42,7 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              <span className="block">Sites criados para apresentar marcas, produtos e serviços com identidade visual e navegação clara.</span>
+              <span className="block">Aplicações web e mobile criadas para resolver problemas reais com interfaces responsivas, identidade visual e navegação clara.</span>
               <span className="mt-6 block text-xs font-semibold uppercase tracking-[.16em] text-white/60">Tecnologias aplicadas</span>
               <strong className="mt-2 block text-white">{projects[projectIndex].technologies}</strong>
               <div className="mt-4 flex justify-center gap-4 text-3xl text-white lg:justify-start">

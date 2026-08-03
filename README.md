@@ -51,6 +51,8 @@ Para apresentar os projetos, foi utilizado o **Swiper**. Os ícones foram implem
 
 ## Projetos apresentados
 
+- **Prazo Certo:** aplicativo multiplataforma para controle de validade, alertas, leitura de códigos de barras e relatórios em PDF.
+- **Currículo HTML:** currículo bilíngue, responsivo e preparado para exportação profissional em PDF.
 - **Mister Color:** site institucional de uma marca de tintas com catálogo visual e foco em cores e ambientes.
 - **M3 Engenharia:** site institucional com apresentação de serviços e soluções de engenharia.
 - **Terra Viva:** conceito de site para produtos naturais, com foco em bem-estar e identidade visual.
