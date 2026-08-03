@@ -96,7 +96,7 @@ const Home = () => {
     <section id="projetos" className="relative isolate overflow-hidden">
       <Projects />
     </section>
-    <section id="tecnologias" className="relative isolate min-h-screen overflow-hidden">
+    <section id="tecnologias" className="relative isolate overflow-hidden">
       <Testimonials />
     </section>
     <section id="contato" className="relative isolate min-h-screen overflow-hidden">
