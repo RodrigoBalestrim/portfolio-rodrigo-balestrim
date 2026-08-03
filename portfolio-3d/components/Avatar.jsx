@@ -8,7 +8,11 @@ const Avatar = () => {
         alt="Retrato de Rodrigo Balestrim"
         width={737}
         height={678}
-        className="translate-z-0 w-full h-full object-contain object-bottom"
+        className="translate-z-0 h-full w-full scale-[.94] object-contain object-bottom"
+        style={{
+          WebkitMaskImage: "linear-gradient(to bottom, #000 0%, #000 78%, transparent 100%)",
+          maskImage: "linear-gradient(to bottom, #000 0%, #000 78%, transparent 100%)",
+        }}
       />
     </div>
   );
