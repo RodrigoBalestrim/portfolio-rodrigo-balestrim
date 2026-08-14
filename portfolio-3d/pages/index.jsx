@@ -43,7 +43,7 @@ const Home = () => {
           </motion.p>
 
           {/* btn */}
-          <div className="relative flex justify-center xl:hidden">
+          <div className="relative flex justify-center lg:justify-start lg:pl-8 xl:hidden">
             <ProjectsBtn />
           </div>
           <motion.div
@@ -76,7 +76,7 @@ const Home = () => {
           animate="show"
           exit="hidden"
           transition={{ duration: 1, ease: "easeInOut" }}
-          className="w-full h-full max-w-[650px] max-h-[610px] absolute -bottom-24 lg:bottom-0 lg:right-[8%]"
+          className="hidden h-full w-full max-h-[610px] max-w-[480px] -bottom-24 lg:absolute lg:block lg:bottom-0 lg:right-0 xl:max-w-[650px] xl:right-[8%]"
         >
           <Avatar />
         </motion.div>
@@ -107,4 +107,6 @@ const Home = () => {
 };
 
 export default Home;
+
+
 
