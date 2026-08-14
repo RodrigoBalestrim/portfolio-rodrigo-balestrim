@@ -16,11 +16,11 @@ const Layout = ({ children }) => {
         <title>Portfólio Rodrigo Balestrim</title>
         <meta
           name="description"
-          content="Portfólio de Rodrigo Balestrim, Desenvolvedor Web."
+          content="Portfólio de Rodrigo Balestrim, Desenvolvedor Front-end Júnior com projetos React, Next.js, TypeScript e React Native."
         />
         <meta
           name="keywords"
-          content="react, next, nextjs, html, css, javascript, js, modern-ui, modern-ux, portfolio, framer-motion, 3d-website, particle-effect"
+          content="desenvolvedor front-end júnior, react, next.js, typescript, react native, expo, supabase, html, css, javascript, portfolio, framer motion"
         />
         <meta name="author" content="Rodrigo Balestrim" />
         <meta name="theme-color" content="#f13024" />
@@ -37,3 +37,4 @@ const Layout = ({ children }) => {
 };
 
 export default Layout;
+

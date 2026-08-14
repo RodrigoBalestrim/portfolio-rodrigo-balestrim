@@ -24,7 +24,7 @@ export const aboutData = [
     title: "habilidades",
     info: [
       {
-        title: "Desenvolvimento Web",
+        title: "Front-end e Mobile",
         icons: [
           FaHtml5,
           FaCss3,
@@ -58,16 +58,16 @@ export const aboutData = [
     title: "experiência",
     info: [
       {
-        title: "Técnico de Informática Autônomo",
-        stage: "2014 - 2024",
+        title: "Desenvolvedor Front-end / Mobile Freelancer",
+        stage: "2023 - Presente",
       },
       {
-        title: "Montagem e manutenção de computadores",
-        stage: "Atendimento direto a clientes",
+        title: "Aplicações web e mobile publicadas",
+        stage: "React, React Native, Expo e Supabase",
       },
       {
-        title: "Estudos em desenvolvimento web",
-        stage: "Em evolução contínua",
+        title: "Integrações e banco de dados",
+        stage: "APIs REST, PostgreSQL e autenticação",
       },
     ],
   },
@@ -75,16 +75,16 @@ export const aboutData = [
     title: "objetivo",
     info: [
       {
-        title: "Desenvolvedor Web",
-        stage: "Primeira oportunidade na área",
+        title: "Desenvolvedor Front-end Júnior",
+        stage: "Aberto a oportunidades remotas e presenciais",
       },
       {
-        title: "HTML, CSS e JavaScript",
-        stage: "Conhecimento prático",
+        title: "React, Next.js e TypeScript",
+        stage: "Projetos práticos publicados",
       },
       {
-        title: "Git e GitHub",
-        stage: "Controle de versões",
+        title: "Git, GitHub e CI/CD",
+        stage: "Versionamento e deploy contínuo",
       },
     ],
   },
@@ -114,9 +114,7 @@ const About = () => {
             animate="show"
             className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0"
           >
-            Desenvolvedor web com experiência na criação de projetos responsivos
-            e interativos usando React, Next.js e JavaScript. Desenvolvo soluções
-            digitais funcionais, com atenção à experiência do usuário.
+            Desenvolvedor Front-end Júnior com experiência prática em React,`n            Next.js, TypeScript, React Native, Expo e Supabase. Desenvolvo`n            aplicações web e mobile responsivas, com foco em acessibilidade e performance.
           </motion.p>
 
           {/* counters */}
@@ -130,40 +128,40 @@ const About = () => {
               {/* experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={10} duration={5} />
+                  <CountUp start={0} end={3} duration={3} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Anos como técnico autônomo.
+                  Anos em projetos de desenvolvimento.
                 </div>
               </div>
 
               {/* clients */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={250} duration={5} />
+                  <CountUp start={0} end={4} duration={3} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Compromisso e responsabilidade.
+                  Aplicações publicadas.
                 </div>
               </div>
 
               {/* projects */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={650} duration={5} />
+                  <CountUp start={0} end={5} duration={3} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Projetos em evolução.
+                  Projetos no portfólio.
                 </div>
               </div>
 
               {/* awards */}
               <div className="relative flex-1">
                 <div className="text-2xl xl:text-4xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={8} duration={5} />
+                  <CountUp start={0} end={1} duration={3} />
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]">
-                  Foco em aprendizado.
+                  Objetivo: primeira oportunidade.
                 </div>
               </div>
             </div>
@@ -222,3 +220,5 @@ const About = () => {
 };
 
 export default About;
+
+

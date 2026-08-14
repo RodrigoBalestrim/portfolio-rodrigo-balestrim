@@ -39,9 +39,7 @@ const Home = () => {
             exit="hidden"
             className="mb-10 max-w-md text-sm font-light leading-7 text-white/70 sm:text-base xl:mb-16 xl:max-w-xl"
           >
-            Desenvolvedor web com experiência na criação de projetos responsivos
-            e interativos usando React, Next.js e JavaScript. Desenvolvo soluções
-            digitais funcionais, com atenção à experiência do usuário.
+            Desenvolvedor Front-end Júnior com projetos web e mobile publicados`n            usando React, Next.js, TypeScript, React Native, Expo e Supabase.`n            Crio interfaces responsivas, acessíveis e focadas em experiência do usuário.
           </motion.p>
 
           {/* btn */}
@@ -109,3 +107,4 @@ const Home = () => {
 };
 
 export default Home;
+

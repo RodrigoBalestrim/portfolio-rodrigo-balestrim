@@ -9,7 +9,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 export const projects = [
-  { title: "Prazo Certo", category: "Aplicativo mobile e web", technologies: "React Native, Expo, TypeScript e Supabase", tools: ["React", "Expo", "TypeScript", "Supabase"], url: "https://prazo-certo.expo.app" },
+  { title: "Prazo Certo", category: "Aplicativo web e mobile", technologies: "React Native, Expo, TypeScript e Supabase", tools: ["React", "Expo", "TypeScript", "Supabase"], url: "https://rodrigobalestrim.github.io/prazo-certo-app/" },
   { title: "Currículo HTML", category: "Currículo responsivo", technologies: "HTML, CSS e JavaScript", tools: ["HTML", "CSS", "JavaScript"], url: "https://rodrigobalestrim.github.io/curriculo-html-rodrigo/" },
   { title: "Mister Color", category: "Loja de tintas", technologies: "HTML, CSS e JavaScript", tools: ["HTML", "CSS", "JavaScript"], url: "/projects/mister-color/index.html" },
   { title: "M3 Engenharia", category: "Site institucional", technologies: "HTML, CSS, JavaScript e design responsivo", tools: ["HTML", "CSS", "JavaScript"], url: "/projects/m3-engenharia/index.html" },
@@ -91,3 +91,4 @@ const WorkSlider = ({ onProjectChange }) => {
 };
 
 export default WorkSlider;
+
