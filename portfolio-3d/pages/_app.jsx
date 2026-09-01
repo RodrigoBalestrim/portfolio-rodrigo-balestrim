@@ -1,5 +1,6 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useRouter } from "next/router";
+import { Analytics } from "@vercel/analytics/react";
 
 import Layout from "../components/Layout";
 import Transition from "../components/Transition";
@@ -56,6 +57,7 @@ function MyApp({ Component, pageProps }) {
           <Component {...pageProps} />
         </motion.div>
       </AnimatePresence>
+      <Analytics />
     </Layout>
   );
 }
