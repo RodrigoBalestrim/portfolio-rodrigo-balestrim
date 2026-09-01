@@ -10,6 +10,17 @@ const Footer = () => {
             [RB] <span className="text-xs font-normal">RODRIGO BALESTRIM</span>
           </a>
           <p className="mt-2 text-xs">© {new Date().getFullYear()} — Desenvolvido com dedicação e criatividade.</p>
+          <div className="mt-3 flex items-center gap-2">
+            <span className="text-xs">Visitas:</span>
+            {/* Contador de visitas (grátis) */}
+            <img
+              src="https://visitor-badge.laobi.icu/badge?page_id=rodrigobalestrim.portfolio-3d"
+              alt="Contador de visitas"
+              title="Total de visitas"
+              className="h-5 w-auto"
+              loading="lazy"
+            />
+          </div>
         </div>
 
         <div className="flex items-center gap-4 text-lg">
