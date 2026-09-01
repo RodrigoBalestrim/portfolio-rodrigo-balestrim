@@ -2,7 +2,6 @@ import Head from "next/head";
 
 import Header from "../components/Header";
 import Nav from "../components/Nav";
-import TopLeftImg from "../components/TopLeftImg";
 
 const Layout = ({ children }) => {
   return (
@@ -26,7 +25,6 @@ const Layout = ({ children }) => {
         <meta name="theme-color" content="#f13024" />
       </Head>
 
-      <TopLeftImg />
       <Nav />
       <Header />
 
